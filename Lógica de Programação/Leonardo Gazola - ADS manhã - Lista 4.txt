@@ -1,0 +1,103 @@
+1)
+
+
+import random
+
+lista = [x for x in range(1,101)]
+
+sorteados = []
+
+while 10 > len(sorteados):
+    sorteados.append(random.choice(lista))
+
+print('Os numeros sorteados foram: ', sorteados)
+sorteados.sort()
+print('Dentre os quais, o maior valor destes é: ', sorteados[9] , ' , e o menor é: ', sorteados[0])
+
+
+
+2)
+
+import random
+
+lista = [x for x in range(1,101)]
+
+sorteados = []
+
+while 20 > len(sorteados):
+    sorteados.append(random.choice(lista))
+
+pares = [x for x in sorteados if x%2 == 0]
+impares = [x for x in sorteados if x%2 != 0]
+
+print('Os numeros sorteados foram: ', sorteados)
+print('Dentre estes numeros, os numeros pares são: ', pares)
+print('E os numeros impares são: ',impares)
+
+
+3)
+
+import random
+
+sorteados_1 = []
+sorteados_2 = []
+primeiros = random.sample(range(100),10)
+segundos = random.sample(range(100),10)
+
+sorteados_1.append(primeiros)
+sorteados_2.append(segundos)
+
+lista_final = []
+
+for a , b in zip(primeiros,segundos):
+    lista_final.append(a)
+    lista_final.append(b)
+
+print('Os valores presentes no primeiro vetor são: ', sorteados_1)
+print('Os valores do segundo vetor são: ', sorteados_2)
+print('A junção destes dois vetores resulta num vetor final com os seguintes valores: ', lista_final)
+
+
+4)
+
+
+statement = str('The Python Software Foundation and the global Python community welcome and encourage participation by everyone. Our community is based on mutual respect, tolerance, and encouragement, and we are working to help each other live up to these principles. We want our community to be more diverse: whoever you are, and whatever your background, we welcome you.')
+
+texto = str(statement)
+texto = texto.replace('.',' ')
+texto = texto.replace(',',' ')
+texto = texto.replace(':',' ')
+texto = texto.lower()
+texto = texto.split()
+
+palavras = []
+
+for f in texto:
+    if f[0] in 'python' or f[-1] in 'python':
+        palavras.append(f)
+
+print(palavras)
+
+
+
+5)
+
+
+statement = str('The Python Software Foundation and the global Python community welcome and encourage participation by everyone. Our community is based on mutual respect, tolerance, and encouragement, and we are working to help each other live up to these principles. We want our community to be more diverse: whoever you are, and whatever your background, we welcome you.')
+
+texto = str(statement)
+texto = texto.replace('.',' ')
+texto = texto.replace(',',' ')
+texto = texto.replace(':',' ')
+texto = texto.lower()
+texto = texto.split()
+
+palavras = []
+
+for f in texto:
+        if f[0] in 'python' or f[-1] in 'python':
+            if len(f) > 5:
+                palavras.append(f)
+
+print(palavras)
+

@@ -1,0 +1,82 @@
+1)
+
+
+num = int(input('digite um numero de 0 a 10: '))
+
+while (0<= num <=10) is False :
+    print('o valor digitado é invalido')
+    num = int(input('digite outro valor no intervalo entre 1 e 10: '))
+print(f'o numero escolhido {num:.2f} é válido.')
+
+
+
+2)
+
+
+usuario = str(input('Digite o nome de usuario: '))
+senha = str(input('Digite a senha: '))
+
+while senha == usuario:
+    print('Não é possível o nome de usuário e a senha serem iguais')
+    usuario = str(input('Redefina o nome de usuário: '))
+    senha = str(input('Redefina a senha: '))
+print('Cadastro realizado com sucesso.')
+
+
+
+3)
+
+
+pop_1 = float(input('Total da população A: '))
+k1 = float(input('Coeficiente de crescimento de A%: '))
+pop_2 = float(input('Total da população B: '))
+k2 = float(input('Coeficiente de crescimento de B: '))
+anos = 1
+
+
+while pop_1 < pop_2:
+    pop_1 = (pop_1 + ((k1/100)*anos*pop_1))
+    pop_2 = (pop_2 + ((k2/100)*anos*pop_2))
+    anos = anos + 1
+pop_1 = int(pop_1)
+pop_2 = int(pop_2)
+print(f'As duas populações em questão terão o mesmo número de indivíduos após {anos:.2f} anos')
+print(f'Quando a população A alcançar {pop_1:.2f} indivíduos e a população B tiver {pop_2:.2f}')
+
+
+
+4)
+
+
+num1 = 1
+num2 = 1
+fib = 0
+x = 1
+sequencia = int(input('Digite o elemento que deseja da sequencia: '))
+
+while x < 3:
+    x = x+1
+    print('1')
+
+while x <= sequencia:
+    fib = num1 + num2
+    num1 = num2
+    num2 = fib
+    print(fib)
+    x = x+1
+
+
+
+5)
+
+
+valor1 = int(input('Digite o primeiro valor: '))
+valor2 = int(input('Digite o segundo valor: '))
+
+resto = 0
+
+while valor2 != 0:
+    resto = valor1 % valor2
+    valor1 = valor2
+    valor2 = resto
+print(f'O máximo divisor comum entre esses dois valores é: {valor1:.2f}')

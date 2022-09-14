@@ -1,0 +1,148 @@
+1)
+
+
+a = float(input('tamanho do lado 1 = '))
+b = float(input('tamanho do lado 2 = '))
+c = float(input('tamanho do lado 3 = '))
+
+if ((a) > abs(b -c) and a < (b + c)) or ((b) > abs(c-a) and b < (b + c)) or ((c) > abs(a + b) and c < (a + b)):
+    if (a == b) or (b == c) or (c == a):
+        if a == b == c:
+            print('Este é um triangulo equilátero')
+        else:
+            print('Este é um trianguo isóceles')
+    else:
+        print('Este é um triangulo escaleno')
+
+else:
+    print('Não é possível formar um triangulo com estas medidas.')
+
+
+
+2)
+
+
+ano = int(input('digite o ano: '))
+
+if (ano % 4) == 0:
+    if (ano % 100) == 0:
+        if (ano % 400) == 0:
+            print('É ano bissexto')
+        else:
+            print('Não é ano bissexto')
+    else:
+        print('É ano bissexto')
+else:
+    if (ano % 400) == 0:
+        print('É ano bissexto')
+    else:
+        print('Não é ano bissexto')
+
+
+3)
+
+
+peso = float(input('Peso dos peixes = '))
+
+
+if peso > 50.0 :
+    excesso = peso - 50.0
+    multa = excesso*4.0
+    print(f'Houve excesso de pesca e a multa a ser paga será de {multa:.2f}')
+else:
+    excesso = 0
+    multa = 0
+    print(f'Não houve excesso de pesca, então o valor de multa a ser pago será {multa:.2f}')
+    
+
+4)
+
+
+a = float(input('Primeiro numero = '))
+b = float(input('Segundo numero = '))
+c = float(input('Terceiro numero = '))
+
+if a == b == c:
+    print('Todos os numeros são iguais')
+else:
+    if a < b > c:
+        print(f'o maior valor dentre os tres numeros fornecidos é {b:.2f}')
+    if b < c > a:
+        print(f'o maior valor dentre os tres numeros fornecidos é {c:.2f}')
+    if c < a > b:
+        print(f'o maior valor dentre os tres numeros fornecidos é {a:.2f}')
+
+
+5)
+
+
+a = float(input('Primeiro numero = '))
+b = float(input('Segundo numero = '))
+c = float(input('Terceiro numero = '))
+
+if a == b == c:
+    print('Todos os numeros são iguais')
+else:
+    if a < b > c:
+        print(f'o maior valor dentre os tres numeros fornecidos é {b:.2f}')
+        if a == c:
+            print('Enquanto isso, os outros dois numeros tem o mesmo valor de ', a)
+        else:
+            if a > c:
+                print(f'Enquanto isso, o menor valor dos tres numeros foi o valor de {c:.2f}')
+            else:
+                print(f'Enquanto isso, o menor valor dos tres numeros foi o valor de {a:.2f}')
+    if b < c > a:
+        print(f'o maior valor dentre os tres numeros fornecidos é {c:.2f}')
+        if b == a:
+            print('Enquanto isso, os outros dois numeros tem o mesmo valor de ', a)
+        else:
+            if b > a:
+                print(f'Enquanto isso, o menor valor dos tres numeros foi o valor de {a:.2f}')
+            else:
+                print(f'Enquanto isso, o menor valor dos tres numeros foi o valor de {b:.2f}')
+    if c < a > b:
+        print(f'o maior valor dentre os tres numeros fornecidos é {a:.2f}')
+        if b == c:
+            print('Enquanto isso, os outros dois numeros tem o mesmo valor de ', b)
+        else:
+            if b > c:
+                print(f'Enquanto isso, o menor valor dos tres numeros foi o valor de {c:.2f}')
+            else:
+                print(f'Enquanto isso, o menor valor dos tres numeros foi o valor de {b:.2f}')
+
+
+
+6)
+
+
+dinheiro = float(input('Valor ganho a hora = '))
+horas = float(input('Total de horas trabalhadas = '))
+sal = dinheiro*horas
+leao = sal*0.11
+inss = sal*0.08
+sindicato = sal*0.05
+liquido = sal - leao - inss - sindicato
+
+
+print(f'O seu salário bruto era de {sal:.2f}R$')
+print(f'{leao:.2f}R$ foram para o leão da receita')
+print(f'{inss:.2f}R$ foram para o inss')
+print(f'{sindicato:.2f}R$ foram o sindicato')
+print(f'Por fim, o que restou de seu salário para você foram {liquido:.2f}R$')
+
+
+7)
+
+
+area = float(input('Tamanho da área em m² = '))
+latas = int(area/(18*3))
+
+if area%(18*3) != 0:
+    latas = latas + 1
+
+print(f'Para cobrir esta área de {area:.2f}m², serão necessárias {latas:.2f} latas de tinta, o que irá custar {latas*80:.2f}R$')
+
+
+    
+

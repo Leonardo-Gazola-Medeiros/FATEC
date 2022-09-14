@@ -1,0 +1,70 @@
+1)
+
+valor_1 = float(input('digite o primeiro valor: '))
+valor_2 = float(input('digite o segundo valor: '))
+print('o resultado da soma dos dois valores será de: ', (valor_1 + valor_2))
+
+
+2)
+
+metros = float(input('digite a distancia em metros: '))
+print('este valor mede ', (metros*1000),' milimetros')
+
+
+3)
+
+dias = float(input('informe o tanto de dias '))
+horas = float(input('informe o tanto de horas '))
+minutos = float(input('informe o tanto de minutos'))
+segundos = float(input('informe o tanto de segundos'))
+total = (segundos + (minutos*60) + (horas*3600) + (dias*3600*24))
+print(' o total de tempo em segundos será de: ', total)
+
+4)
+
+salário = float(input('digite o salário'))
+aumento = float(input('aumento% = '))
+print('o salário final será de: ', (salário + (salário * aumento/100)))
+
+5)
+
+preço = float(input('informe o preço: '))
+desconto = float(input('informe o desconto(%): '))
+total = (preço - (preço*(desconto/100)))
+print( 'o preço final do produto será de: ', total)
+
+6)
+
+distancia = float(input(' digite a distancia total da viagem(km): '))
+velocidade = float(input(' digite a velocidade de locomoção: '))
+tempo = (distancia/velocidade)
+print('o tempo total da viagem será de: ', tempo*60,' minutos')
+
+7)
+
+temperatura = float(input('digite a temperatura(ºC): '))
+Conversão = (9*(temperatura/5)+32)
+print('a temperatura em fahrentheit será de: ', Conversão)
+
+8)
+
+temperatura = float(input('digite a temperatura(ºF): '))
+print('a temperatura em Cº será de: ',((((5/9)*(temperatura-32)))))
+
+9)
+
+km = float(input('quantos km andou: '))
+dias = int(input('quantos dias faz que alugou: '))
+preço = float((km*0.15)+(dias*60))
+print('o preço final a se pagar será de: R$', preço, ' reais')
+
+10)
+
+cigarros = float(input('digite o tanto de cigarros q voce fuma por dia: '))
+dias = float(input('a quantos anos voce fuma: '))
+resultado = (cigarros*(dias*365)*(1/(6*24)))
+print('voce perdeu em média ', resultado, ' dias de vida')
+
+11)
+
+print(len(str(2**1000000)))
