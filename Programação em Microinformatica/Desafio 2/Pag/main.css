@@ -1,0 +1,183 @@
+.topo {
+
+    background-color: rgb(245, 174, 42);
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+
+}
+
+.links {
+
+    background-color:rgb(245, 174, 42);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    color: white;
+    padding-bottom: 20px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.fundo {
+
+    background-color: rgb(206, 204, 204);
+    height: 100%;
+
+}
+
+.centro {
+
+    display: inline-block;
+    width:910px;
+    text-align: center;
+
+
+}
+
+.esquerda {
+
+    float: left;
+    width: 660px;
+
+}
+
+.direita {
+
+    float: right;
+    width: 220px;
+
+}
+
+
+.principal {
+
+    background-color: white;
+    float: left;
+    width: 660px;
+    margin-top: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    
+}
+
+.principal_titulo {
+
+    color: rgb(245, 174, 42) ;
+    margin-left:10px ;
+    text-align: left;
+    margin-bottom: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.principal_data {
+
+    margin-left:10px ;
+    text-align: left;
+    margin-top: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.principal_texto {
+
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 10px;
+    font-size: 120%;
+
+}
+
+.principal_link {
+
+    text-align: left;
+    color: rgb(245, 174, 42);
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 10px;
+    display: block;
+    text-decoration: none;
+    font-size: 120%;
+    padding-bottom: 20px;
+
+}
+
+.secundario {
+
+    background-color: white;
+    float: right;
+    width: 220px;
+    margin-top: 20px;
+    
+
+
+}
+
+.secundario_head {
+
+    text-align: center;
+    background-color: rgb(161, 157, 157);
+    display: inline-block;
+    width: 90%;
+    margin: 10px;
+    height: 30px;
+
+    
+}
+
+.secundario_title  {
+
+    text-align: left;
+    margin-top: 5px;
+    color: rgb(63, 60, 60);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.secundario_text  {
+
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 10px;
+    font-size: 120%;
+
+}
+
+.secundario_links  {
+
+    text-align: left;
+    color: rgb(245, 174, 42);
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 10px;
+    display: block;
+    text-decoration: none;
+    font-size: 120%;
+
+}
+
+.linha_quebra  {
+
+    width: 90%;
+    padding: 1px;
+    background-color: grey;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+.pezada {
+
+    display: inline-block;
+    background-color: gray;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    position: relative;
+    background-size: auto;
+    background-position: center bottom;
+
+}
