@@ -1,0 +1,80 @@
+1)
+
+
+def dormir(dia_semana, feriado):
+
+    if feriado == True:
+        return True
+    elif dia_semana == False:
+        return True
+    elif (dia_semana == True) and (feriado == False):
+        return False
+    else:
+        return False
+
+print(dormir(True, True))
+
+
+2)
+
+
+def alunos_problema(a_sorri, b_sorri):
+
+    if ((a_sorri == True) and (b_sorri == True)) or ((a_sorri == False) and (b_sorri == False)):
+        return True
+    else:
+        return False
+
+
+3)
+
+
+def soma_dobro(a, b):
+    if a == b:
+        return((a+b)*2)
+    else:
+        return (a+b)
+
+
+4)
+
+
+def diff21(n):
+
+    if n > 21:
+        return ((n - 21)*2)
+    elif n < 21:
+        return (21 - n)
+    else:
+        return (0)
+
+
+5)
+
+
+def papagaio(falando, hora):
+
+    if (falando == True) and (hora > 20 or hora < 7):
+        return True
+    else:
+        return False
+
+
+6)
+
+
+def dez(a, b):
+    return True if:
+        (a == 10 or b == 10) or (a+b == 10)
+    else:
+        return False
+
+
+7)
+
+
+def dista10(n):
+    if ((n - 100 <= 10 and n - 100 > 0) or (100 - n <= 10 and 100 - n > 0)) or ((n - 200 <= 10 and n - 200 >0) or (200 - n <= 10 and 200 - n >0)):
+        return True
+    else:
+        return False
